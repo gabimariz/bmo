@@ -10,16 +10,16 @@ public class Social extends ListenerAdapter {
     @Override
     public void onSlashCommandInteraction(SlashCommandInteractionEvent event) {
       EmbedMessage embed = new EmbedMessage(
-        "Outras mídias",
+        "Other medias",
         new Color(19, 102, 233),
-        "**[instagram](https://instagram.com/edbbarros.dev)** \n" +
-          "**[twitter](https://twitter.com/edbbarros)**\n" +
-          "**[twitch](https://twitch.com/edbbarros)**\n" +
-          "**[youtube](https://youtube.com/@edbbarros)**\n" +
-          "**[linkedin](https://linkedin.com/in/edbbarros)**\n" +
-          "**[github](https://github.com/edbbarros)**",
+        "**[instagram]()** \n" +
+          "**[twitter]()**\n" +
+          "**[twitch]()**\n" +
+          "**[youtube]()**\n" +
+          "**[linkedin]()**\n" +
+          "**[github]()**",
         "",
-      "https://avatars.githubusercontent.com/u/39862684?v=4"
+      ""
       );
 
 
