@@ -18,7 +18,7 @@ public class Pause extends ListenerAdapter {
     if(event.getAuthor().isBot()) return;
 
     if(command[0].equals("!pause")) {
-      if(MemberMessage.role(event, "1068641987579883663")
+      if(MemberMessage.role(event, "")
         || MemberMessage.permission(event, Permission.ADMINISTRATOR)) {
         channel.sendMessageEmbeds(Embed.error()).queue();
 
