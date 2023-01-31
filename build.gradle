@@ -1,0 +1,34 @@
+plugins {
+  id 'java'
+}
+
+group 'me.gabimariz.bot'
+version '1.0-SNAPSHOT'
+
+repositories {
+  maven {
+    url 'https://m2.dv8tion.net/releases'
+  }
+  mavenCentral()
+  jcenter()
+}
+
+dependencies {
+  testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
+  testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+  implementation 'org.apache.logging.log4j:log4j-api:2.19.0'
+  implementation 'org.apache.logging.log4j:log4j-core:2.19.0'
+  implementation 'org.apache.logging.log4j:log4j-slf4j-impl:2.19.0'
+  implementation 'net.dv8tion:JDA:5.0.0-beta.3'
+  implementation 'com.sedmelluq:lavaplayer:1.3.77'
+
+  compileOnly 'org.projectlombok:lombok:1.18.24'
+  annotationProcessor 'org.projectlombok:lombok:1.18.24'
+
+  testCompileOnly 'org.projectlombok:lombok:1.18.24'
+  testAnnotationProcessor 'org.projectlombok:lombok:1.18.24'
+}
+
+test {
+  useJUnitPlatform()
+}
