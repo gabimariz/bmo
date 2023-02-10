@@ -25,7 +25,12 @@ public class Live extends ListenerAdapter {
     if (event.getName().equals("live")) {
       if(!MemberSlash.memberRole(event, "")
         || !MemberSlash.memberPermission(event, Permission.ADMINISTRATOR)) {
-        event.replyEmbeds(Embed.error()).queue();
+        event.replyEmbeds(
+          Embed.status(
+            "Access denied",
+            new Color(217, 83, 79),
+            "You are not allowed to use the command!")
+        ).queue();
 
         return;
       }
@@ -39,4 +44,3 @@ public class Live extends ListenerAdapter {
     }
   }
 }
-;
