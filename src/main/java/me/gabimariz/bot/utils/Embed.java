@@ -5,11 +5,11 @@ import net.dv8tion.jda.api.entities.MessageEmbed;
 import java.awt.*;
 
 public class Embed {
-  public static MessageEmbed error() {
+  public static MessageEmbed status(String title, Color color, String description) {
     EmbedMessage embed = new EmbedMessage(
-      "Acess denied",
-      new Color(217, 83, 79),
-      "You are not allowed to use the command!"
+      title,
+      color,
+      description
     );
 
     return embed.message().build();
