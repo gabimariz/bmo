@@ -2,4 +2,5 @@
 .vscode
 build
 .gradle
+.env
 bin
